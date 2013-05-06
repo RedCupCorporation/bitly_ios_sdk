@@ -103,7 +103,7 @@
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
     NSError *error = nil;
-    NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:receivedData options:nil error:&error];
+    NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:receivedData options:kNilOptions error:&error];
     
     if (error) {
         [delegate bitlyRequest:self failedForLongURL:self.longURL statusCode:0 statusText:@"Response could not be converted to a JSON value"];
