@@ -79,7 +79,7 @@
         
         NSString *idnTestTLDPattern = @"\u0625\u062e\u062a\u0628\u0627\u0631|\u0622\u0632\u0645\u0627\u06cc\u0634\u06cc|\u6d4b\u8bd5|\u6e2c\u8a66|\u0438\u0441\u043f\u044b\u0442\u0430\u043d\u0438\u0435|\u092a\u0930\u0940\u0915\u094d\u0937\u093e|\u03b4\u03bf\u03ba\u03b9\u03bc\u03ae|\ud14c\uc2a4\ud2b8|\u05d8\u05e2\u05e1\u05d8|\u30c6\u30b9\u30c8|\u0baa\u0bb0\u0bbf\u0b9f\u0bcd\u0b9a\u0bc8|xn--kgbechtv|xn--hgbk6aj7f53bba|xn--0zwm56d|xn--g6w251d|xn--80akhbyknj4f|xn--11b5bs3a9aj6g|xn--jxalpdlp|xn--9t4b11yi5a|xn--deba0ad|xn--zckzah|xn--hlcj6aya9esc7a";
         
-        NSString *tldPattern = [NSString stringWithFormat:@"(?:[^\\s\\!\"\\#\\$\\%\\&\\'\\(\\)\\*\\+\\,\\.\\/\\:\\;\\<\\=\\>\\?\\@\\\\\\[\\]\\^\\_\\`\\{\\|\\}\\~]+\\.)+(?:aero|arpa|asia|biz|cat|com|coop|edu|gov|info|int|jobs|mil|mobi|museum|name|net|org|pro|tel|travel|local|example|invalid|test|%@|%@|%@|[a-z]{2})(?::[0-9]+)?", idnTLDPattern, idnFutureTLDPattern, idnTestTLDPattern];
+        NSString *tldPattern = [NSString stringWithFormat:@"(?:[^\\s\\!\"\\#\\$\\%%\\&\\'\\(\\)\\*\\+\\,\\.\\/\\:\\;\\<\\=\\>\\?\\@\\\\\\[\\]\\^\\_\\`\\{\\|\\}\\~]+\\.)+(?:aero|arpa|asia|biz|cat|com|coop|edu|gov|info|int|jobs|mil|mobi|museum|name|net|org|pro|tel|travel|local|example|invalid|test|%@|%@|%@|[a-z]{2})(?::[0-9]+)?", idnTLDPattern, idnFutureTLDPattern, idnTestTLDPattern];
         
         NSString *domainPattern = [NSString stringWithFormat:@"(?:%@|%@)", tldPattern, ipPattern];
         
