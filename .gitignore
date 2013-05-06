@@ -4,3 +4,4 @@
 **/*.xcodeproj/xcuserdata/*
 BitlySDK.xcworkspace/xcuserdata/*
 BitlyLibrary/Bitly/
+*BitlyServices.plist
